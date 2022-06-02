@@ -1,0 +1,69 @@
+@import "variables.scss";
+
+.editInput {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+
+  &__label {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 40px 0 8px;
+  }
+  &__input {
+    box-sizing: border-box;
+    border-radius: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px 16px;
+    border: 1px solid $base;
+
+    min-width: 240px;
+    background-color: transparent;
+
+    &:focus {
+      box-sizing: border-box;
+      border: 2px solid $base;
+      outline: 2px solid $focus;
+      margin: -1px;
+    }
+
+    &.errorInput {
+      box-sizing: border-box;
+      border: 2px solid $base;
+      outline: 2px solid $error;
+      margin: -1px;
+    }
+  }
+}
+
+input[type="date"] {
+  color: $base;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  padding-left: 16px;
+
+  &[value=""] {
+    color: $lighten20;
+  }
+
+  &::placeholder {
+    color: $lighten20;
+  }
+
+  &::-moz-clear {
+    border: 1px solid $base;
+  }
+  &::-webkit-calendar-picker-indicator {
+    position: relative;
+    background-image: url(../icons/calendar.svg);
+    height: 22px;
+    width: 20px;
+    padding: 12px 16px;
+    border-left: 1px solid $base;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

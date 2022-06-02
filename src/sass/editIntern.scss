@@ -1,0 +1,82 @@
+@import "variables.scss";
+
+.editIntern {
+  text-align: left;
+  width: 100%;
+  margin: 40px 80px 40px;
+  &__title {
+    display: block;
+    text-align: start;
+    color: $base;
+    margin: 0;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  &__back {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $base;
+    position: absolute;
+    top: 52px;
+    height: 24px;
+    transform: translateX(-80px);
+    width: 112px;
+    &:hover {
+      cursor: pointer;
+      color: $lighten20;
+      &:active {
+        color: $lighten10;
+      }
+    }
+  }
+
+  &__backArrow {
+    margin: 4px;
+    height: 16px;
+    width: auto;
+  }
+  &__backTxt {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: 8px;
+  }
+
+  &__form {
+    margin: 0;
+    &__calendars {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__submit {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 40px;
+      margin-top: 40px;
+      width: 224px;
+      height: 48px;
+      background-color: $base;
+      border: none;
+      color: $lighten100;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      &:hover {
+        background-color: $lighten20;
+        cursor: pointer;
+        &:active {
+          background-color: $lighten10;
+        }
+      }
+    }
+  }
+}

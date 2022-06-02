@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.editInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Roboto";
+}
+
+.editInput__label {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 40px 0 8px;
+}
+
+.editInput__input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 12px 16px;
+  border: 1px solid #222222;
+  min-width: 240px;
+  background-color: transparent;
+}
+
+.editInput__input:focus {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #222222;
+  outline: 2px solid #d3f2ff;
+  margin: -1px;
+}
+
+.editInput__input.errorInput {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #222222;
+  outline: 2px solid #a3270c;
+  margin: -1px;
+}
+
+input[type="date"] {
+  color: #222222;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  padding-left: 16px;
+}
+
+input[type="date"][value=""] {
+  color: #555555;
+}
+
+input[type="date"]::-webkit-input-placeholder {
+  color: #555555;
+}
+
+input[type="date"]:-ms-input-placeholder {
+  color: #555555;
+}
+
+input[type="date"]::-ms-input-placeholder {
+  color: #555555;
+}
+
+input[type="date"]::placeholder {
+  color: #555555;
+}
+
+input[type="date"]::-moz-clear {
+  border: 1px solid #222222;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: relative;
+  background-image: url(../icons/calendar.svg);
+  height: 22px;
+  width: 20px;
+  padding: 12px 16px;
+  border-left: 1px solid #222222;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  cursor: pointer;
+}

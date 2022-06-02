@@ -1,0 +1,88 @@
+@import "variables.scss";
+
+.internList {
+  text-align: center;
+  width: 100%;
+  margin: 40px 80px 80px;
+  &__title {
+    text-align: start;
+    color: $base;
+    margin: 0 0 40px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__participant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    min-width: 250px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    &:hover {
+     
+      border: 2px solid $base;
+    }
+
+    &:nth-child(odd) {
+      background-color: $lighten50;
+    }
+    &:nth-child(even) {
+      background-color: $lighten60;
+    }
+  }
+}
+
+.participant {
+  &__name {
+    margin: 0 24px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &__link {
+    color: $base;
+    text-decoration: none;
+  }
+
+  &__editBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 24px 0;
+    padding: 12px 0px;
+    width: 60px;
+    height: 48px;
+    border-style: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: transparent;
+
+    &:hover {
+      cursor: pointer;
+      color: $lighten20;
+      &:active{
+        color: $lighten10;
+      }
+    }
+  }
+
+  &__editIcon {
+    position: relative;
+
+    height: 24px;
+    width: 24px;
+  }
+  &__editTxt {
+    text-decoration: none;
+  }
+}

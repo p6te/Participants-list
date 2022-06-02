@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.editIntern {
+  text-align: left;
+  width: 100%;
+  margin: 40px 80px 40px;
+}
+
+.editIntern__title {
+  display: block;
+  text-align: start;
+  color: #222222;
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.editIntern__back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #222222;
+  position: absolute;
+  top: 52px;
+  height: 24px;
+  -webkit-transform: translateX(-80px);
+          transform: translateX(-80px);
+  width: 112px;
+}
+
+.editIntern__back:hover {
+  cursor: pointer;
+  color: #555555;
+}
+
+.editIntern__back:hover:active {
+  color: #3b3b3b;
+}
+
+.editIntern__backArrow {
+  margin: 4px;
+  height: 16px;
+  width: auto;
+}
+
+.editIntern__backTxt {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin-left: 8px;
+}
+
+.editIntern__form {
+  margin: 0;
+}
+
+.editIntern__form__calendars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.editIntern__form__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 40px;
+  margin-top: 40px;
+  width: 224px;
+  height: 48px;
+  background-color: #222222;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.editIntern__form__submit:hover {
+  background-color: #555555;
+  cursor: pointer;
+}
+
+.editIntern__form__submit:hover:active {
+  background-color: #3b3b3b;
+}

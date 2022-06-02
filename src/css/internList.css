@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.internList {
+  text-align: center;
+  width: 100%;
+  margin: 40px 80px 80px;
+}
+
+.internList__title {
+  text-align: start;
+  color: #222222;
+  margin: 0 0 40px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.internList__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.internList__participant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
+  min-width: 250px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid transparent;
+}
+
+.internList__participant:hover {
+  border: 2px solid #222222;
+}
+
+.internList__participant:nth-child(odd) {
+  background-color: #ededed;
+}
+
+.internList__participant:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.participant__name {
+  margin: 0 24px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.participant__link {
+  color: #222222;
+  text-decoration: none;
+}
+
+.participant__editBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 24px 0;
+  padding: 12px 0px;
+  width: 60px;
+  height: 48px;
+  border-style: none;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: transparent;
+}
+
+.participant__editBtn:hover {
+  cursor: pointer;
+  color: #555555;
+}
+
+.participant__editBtn:hover:active {
+  color: #3b3b3b;
+}
+
+.participant__editIcon {
+  position: relative;
+  height: 24px;
+  width: 24px;
+}
+
+.participant__editTxt {
+  text-decoration: none;
+}
