@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Participants-list/static/css/main.99201c42.css",
+    "main.js": "/Participants-list/static/js/main.8f84f450.js",
+    "index.html": "/Participants-list/index.html",
+    "static/media/calendar.svg": "/Participants-list/static/media/calendar.d7b17ac4729a44a1a6cc.svg",
+    "static/media/logo.svg": "/Participants-list/static/media/logo.429e70a0f7997e5a018540a8658a420c.svg",
+    "main.99201c42.css.map": "/Participants-list/static/css/main.99201c42.css.map",
+    "main.8f84f450.js.map": "/Participants-list/static/js/main.8f84f450.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99201c42.css",
+    "static/js/main.8f84f450.js"
+  ]
+}
